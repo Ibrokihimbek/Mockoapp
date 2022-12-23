@@ -9,6 +9,7 @@ class ApiService extends ApiClient {
     try {
       Response response = await dio.get("${dio.options.baseUrl}/dynamic");
       if (response.statusCode! >= 200 && response.statusCode! < 300) {
+        print(response.data);
         myResponse.data = MockoModel.fromJson(response.data);
       }
     } catch (err) {

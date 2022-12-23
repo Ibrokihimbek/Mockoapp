@@ -8,7 +8,7 @@ class FieldsModel {
   String regExp;
   bool required;
   String type;
-  List<String> values;
+  List values;
 
   FieldsModel(
       {required this.code,
@@ -33,7 +33,7 @@ class FieldsModel {
       regExp: jsonData['regExp'] as String? ?? '',
       required: jsonData['required'] as bool? ?? false,
       type: jsonData['type'] as String? ?? '',
-      values: jsonData['values'] as List<String>? ?? [],
+      values: jsonData['values'] as List? ?? [],
     );
   }
 }

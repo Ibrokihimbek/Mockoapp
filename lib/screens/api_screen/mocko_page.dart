@@ -43,23 +43,22 @@ class MockoPage extends StatelessWidget {
                           const EdgeInsets.only(right: 20, left: 20, top: 15),
                       child: Container(
                         width: double.infinity,
-                        height: 70,
+                        height: 100,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.grey,
                         ),
                         child: Padding(
                           padding: const EdgeInsets.only(right: 15, left: 15),
-                          child: Row(
+                          child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              const SizedBox(width: 15),
                               SizedBox(
                                 width: 200,
                                 child: Text(
                                   datalist.fields[index].code,
                                   style: const TextStyle(
-                                    color: Colors.green,
+                                    color: Colors.red,
                                     fontSize: 22,
                                   ),
                                 ),
